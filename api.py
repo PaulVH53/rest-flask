@@ -17,8 +17,8 @@ class ToDoModel(db.Model):
     task = db.Column(db.String(200))
     summary = db.Column(db.String(500))
 
-with app.app_context():
-    db.create_all()
+# with app.app_context():
+#     db.create_all()
 
 
 task_post_args = reqparse.RequestParser()
